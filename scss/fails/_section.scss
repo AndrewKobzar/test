@@ -39,6 +39,7 @@ line-height: 19px;
 
 .Favorites__list {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,22 +59,23 @@ line-height: 19px;
 
   width: 100%;
   height: auto;
-  padding: 33px;
+  padding: 17px;
   border: 11px solid #ffe550;
   border-radius: 50%;
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 2);
     border: 14px solid #ffe550;
+    padding: 21px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 40px;
+    padding: 24px;
     width: calc((100% - 64px) / 3);
     border: 16px solid #ffe550;
   }
   &:nth-last-child(-n + 3) {
     display: none;
     @media screen and (min-width: 768px) {
-      display: flex;
+      display: block;
     }
   }
 }
